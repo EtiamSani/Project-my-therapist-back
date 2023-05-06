@@ -3,7 +3,9 @@
 # My Therapist API 
 ## What the project My therapist about ?
 
-#### My Therapist is a project that provides users in need with the ability to find the therapist that best suits their needs. We have developed an algorithm that analyzes the answers provided in a survey (which is stored in our database) and returns a list of therapists that are most suitable for the particular pathology/issue that the user wants to work on.
+#### My Therapist is a project that provides users in need with the ability to find the therapist that best suits their needs. 
+
+We have developed an algorithm that analyzes the answers provided in a survey (which is stored in our database) and returns a list of therapists that are most suitable for the particular pathology/issue that the user wants to work on.
 
 ## Language, framworks and tools used in this project 
 
