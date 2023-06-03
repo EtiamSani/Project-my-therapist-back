@@ -6,8 +6,8 @@
   "scripts": {
     "test": "mocha",
     "dev": "DEBUG=controller:*,model:*,express,error,router node server.js",
-    "start": "node server.js",
-    "build" : "node script/seedingAll.js"
+    "start": "node server.js"
+    
   },
   "repository": {
     "type": "git",
