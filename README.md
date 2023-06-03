@@ -20,11 +20,11 @@ You can get acces to the API throug this link : https://my-therapist-api.up.rail
 
 ## How to install the project ? 
 
-1. Clone the repository in your terminal type : 
+1. Clone the repository in your terminal:
 ``` 
 git clone git@github.com:EtiamSani/Project-my-therapist-back.git
 ```
-2. To install all the dependensis : 
+2. Install all the dependencies:
 
 ``` 
 npm i 
@@ -33,17 +33,17 @@ or
 ```
 npm install
 ```
-3. Environnement setup 
+3. Environment setup:
 
-To set up the environnement make sur to creat a .env file at the root of the project. An exemple of the content to put in the .env file is avable .env.example
+To set up the environment, make sure to create a .env file at the root of the project. An example of the content to put in the .env file is available in .env.example.
 
-4. Initialization of the database 
+4. Initialization of the database:
 
-Go to the file migration :
+Go to the migrations directory:
 ```
 cd migrations
 ```
-then type 
+Then execute the following command:
 
 ```
 bash 1.init_db.sh
@@ -51,15 +51,15 @@ bash 1.init_db.sh
 
 5. Create tables 
 
-In your terminal in migration file : 
+In the migrations directory, run the following command in your terminal:
 
 ```
 bash 3.deploy.sh
 ```
 
-6. Seed the database through seeding script 
+6. Seed the database through seeding script:
 
-At the root of the project : 
+At the root of the project, execute the following command:
 ```
 node script/seedingAll.cjs
 ```
@@ -75,6 +75,9 @@ or
 ```
 nodemon server.js
 ```
+## Routes
+
+The routes are available here: https://my-therapist-api.up.railway.app/api-docs
 
 ## Arborescence of the project 
 
