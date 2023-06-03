@@ -164,7 +164,7 @@ const adminController = {
             next(new APIError("Erreur lors de la récupération de la suppresion d'un patient", 500))
         }
     }
-
+//
 
 }
 
