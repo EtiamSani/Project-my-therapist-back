@@ -394,6 +394,8 @@ router.get('/reviews/therapists/:id',patientsController.getReviewsOneTherapists)
  */
 router.post('/:patientId/appointment/therapists/:therapistId', patientsController.createAppointmentOneTherapist);
 
+router.delete('/appointment/:appointmentId', patientsController.deleteAnAppointment);
+
 /**CREATE reviews patient-therapist --*/
 router.post('/:patientId/reviews/therapists/:therapistId',patientsController.createReviewsOneTherapist);
 

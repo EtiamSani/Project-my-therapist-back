@@ -454,6 +454,18 @@ const patientsController = {
              next(new APIError("Erreur lors de la réponse au quizz", 500));
          
          } 
+    },
+    async deleteAnAppointment (req, res, next) {
+        const id = req.params.appointmentId;
+
+        try {
+
+        const deleteAnAppointment = await patientsDatamapper.delete(id);
+            res.json(deleteAnAppointment);
+        } catch {
+            next(new APIError("Erreur lors de la supression d'un rdv", 500));
+        }
+
     }
 
 
