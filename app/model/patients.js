@@ -203,7 +203,7 @@ class Patients extends CoreDatamapper {
 
     async deleteAppointment(id){
         const preparedQuery = {
-            text:`DELETE appointments a WHERE a.id = $1`,
+            text:`DELETE FROM appointments a WHERE a.id = $1`,
             values: [id],
         }
         try {
