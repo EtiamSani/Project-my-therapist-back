@@ -460,7 +460,7 @@ const patientsController = {
 
         try {
 
-        const deleteAnAppointment = await patientsDatamapper.delete(id);
+        const deleteAnAppointment = await patientsDatamapper.deleteAppointment(id);
             res.json(deleteAnAppointment);
         } catch {
             next(new APIError("Erreur lors de la supression d'un rdv", 500));

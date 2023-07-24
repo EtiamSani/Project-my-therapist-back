@@ -200,6 +200,19 @@ class Patients extends CoreDatamapper {
         }
 
     }
+
+    async deleteAppointment(id){
+        const preparedQuery = {
+            text:`DELETE * appointments a WHERE a.id = $1`,
+            values: [id],
+        }
+        try {
+        const result = await this.client.query(preparedQuery);
+        return result.rows;
+        } catch (err) {
+            await errorModule.log(err,"Base de données");
+        }
+    }
 }
 
 module.exports = new Patients(client);
