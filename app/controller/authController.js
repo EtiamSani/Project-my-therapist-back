@@ -164,9 +164,9 @@ const authController = {
        * Make sure the phone number is 10 digits
        */
       if (phonenumber.length !== 10) {
-        return res.status(400).json({
-          error: "Le numéro de téléphone doit être composé de 10 chiffres"
-        });
+        return res.status(400).send(
+          "Le numéro de téléphone doit être composé de 10 chiffres"
+        );
       }
       /**
        * Check that all fields are filled in
